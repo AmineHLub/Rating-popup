@@ -92,7 +92,7 @@ body {
     background-color: var(--main-orange);
   }
 
-  .rating-list li.selecetd {
+  .rating-list li.selected {
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 12%, 63%);
   }
