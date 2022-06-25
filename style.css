@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.dflex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  --main-orange: hsl(25, 97%, 53%)
+}
+
+.fixed-popup {
+  box-sizing: content-box;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #404751;
+  background-image: linear-gradient(185deg, #2f353c 0%, hsl(213, 19%, 18%) 22%, hsl(218, 13%, 12%) 100%);
+  width: 290px;
+  border-radius: 20px;
+  padding: 30px 35px;
+  color: hsl(217, 12%, 63%);
+  font-family: Overpass;
+  font-size: 15px;
+}
+
+.rating-content-information > h2 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.popup-content {
+  flex-direction: column;
+}
+
+.rating-list li,
+.useless-star {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.077);
+  line-height: 45px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-list {
+  justify-content: space-between;
+}
+
+.submit-btn {
+  cursor: pointer;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-family: Overpass;
+  line-height: 37px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: var(--main-orange);
+}
+
+@media only screen and (max-width: 375px) {
+  .fixed-popup {
+  width: 75%;
+  }
+}
